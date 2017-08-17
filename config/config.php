@@ -2,9 +2,11 @@
 
 define('HOST', "localhost");
 define('USER', "root");
-define('USER_POSTRE', 'postgres');
 define('PASSWORD', "123456");
-define('PASSWORD_POSTRE', "123456");
-define('DBNAME', "user1");
-define('TABLE_NAME', "MY_TEST");
 
+define('USER_POSTGRE', 'postgres');
+define('PASSWORD_POSTGRE', "123456");
+define('DBNAME_POSTGRE', "postgres");
+
+define('TABLE_NAME', "MY_TEST");
+define('DBNAME', "user1");

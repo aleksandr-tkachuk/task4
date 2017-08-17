@@ -10,9 +10,8 @@
 </head>
 <body>
 
+    <div class="alert alert-success" role="alert">...select key from MY_TEST where data = text <br> <?=print_r($res['key'])?></div>
 
-    <?=print_r($res);?>
-        
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
