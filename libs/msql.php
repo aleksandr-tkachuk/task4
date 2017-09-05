@@ -12,13 +12,10 @@ class MySQL extends Sql {
     }
 
     public function exec() {
-        if (empty($this->select) || empty($this->from) || empty($this->where)) {
-            throw new Exception("not set");
-        }
+        parent::exec();
+        $res = mysql_query($this->query, $this->dbh);
 
-        $query = "select `{$this->select}` from `{$this->from}` where {$this->where};";
-        $res = mysql_query($query, $this->dbh);
-        return mysql_fetch_array($res);
+        return (!empty($this->select)) ? mysql_fetch_array($res) : $res;
     }
 
 }
